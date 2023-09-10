@@ -1,28 +1,25 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
 /**
  * main - entry point
  *
- * Return :0 (success)
+ * Description : print all alphabe letters
+ *
+ * Return :always 0 (Success)
  */
 
 int main(void)
 {
-	char c;
+	char c = 'a';
 
-	char d;
-
-	c = 'a';
-	d = 'A';
 	while
 		(c <= 'z') {
 			putchar(c);
 			c++;
 		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-		}
 	putchar('\n');
+
 	return (0);
 }
