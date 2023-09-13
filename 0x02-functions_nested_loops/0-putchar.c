@@ -15,7 +15,7 @@ int main(void)
 	int c;
 
 	for (c = 0; c < 8; c++)
-		_putchar(s[c]);
+		putchar(s[c]);
 	putchar('\n');
 	return (0);
 }
