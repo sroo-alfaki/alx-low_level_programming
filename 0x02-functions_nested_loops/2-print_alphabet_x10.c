@@ -3,6 +3,7 @@
 /**
  * print_alphabet_x10 - prints 10 times the alphabet, in lowercase
  */
+
 void print_alphabet_x10(void)
 {
 	int b;
@@ -10,8 +11,8 @@ void print_alphabet_x10(void)
 
 	for (b = 0; b <= 9; b++)
 	{
-	for (c = 'a'; c <= 'z'; c++)
+		for (c ='a'; c <='z'; c++)
 		_putchar(c);
-		_putchar('\n');
+		putchar ('\n');
 	}
 }
