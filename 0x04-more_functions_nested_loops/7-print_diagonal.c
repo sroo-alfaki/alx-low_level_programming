@@ -10,7 +10,7 @@ include "main.h"
 
 void print_diagonal(int n)
 {
-	int a, c;
+	int c, a;
 
 	if (n <= 0)
 		_putchar('\n');
