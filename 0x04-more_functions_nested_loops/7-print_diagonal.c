@@ -18,8 +18,8 @@ void print_diagonal(int n)
 	{
 		for (c = 1; c <= n; c++)
 		{
-			for (a = 1; a <= n; a++)
-				_putchar('_');
+			for (a = 1; a <= c; a++)
+				_putchar(' ');
 			_putchar(92);
 			_putchar('\n');
 		}
