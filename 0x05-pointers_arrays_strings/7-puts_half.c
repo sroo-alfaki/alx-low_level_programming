@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _puts -  function that prints a string
+ * puts_half -  function that prints half of a string
  * @str: The value of pointer
  *
  * Return: 0 always
  */
-
-void _puts(char *str)
+void puts_half(char *str)
 {
-        while (*str != '\0')
-        {
-                _putchar(*str + 0);
-                str++;
-        }
-        _putchar('\n');
-}
+	int i;
 
+	for (i = 0; str[i] != '\0'; ++i)
+		;
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+}
