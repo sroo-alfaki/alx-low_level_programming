@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string.
+ * *cap_string - function that capitalizes all words of a string.
  *
- * @str : string to be Capitalize
+ * @s : string to be Capitalize
  *
  * Return: pointer string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int x, y;
 	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
