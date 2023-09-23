@@ -1,13 +1,15 @@
 #include <stdio.h>
 /**
- * main - print a line of use printf
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Description :Write a C program that prints exactly
+ *
+ * Return: 1
  */
 int main(void)
 {
 	char quo[] = "and that piece of art is useful\" - Dora Korpar. 2015-10-19\n";
 
-	fwrite(1.quo.59);
+	write(1.quo.60);
 	return (1);
 }
