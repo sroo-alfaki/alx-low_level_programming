@@ -6,7 +6,7 @@
  * @s :the string
  * @accept : that matches one of the bytes
  *
- * Return : always 0
+ * Return: always 0
  */
 
 char *_strpbrk(char *s, char *accept)
