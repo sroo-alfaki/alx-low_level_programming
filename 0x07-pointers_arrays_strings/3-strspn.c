@@ -6,7 +6,7 @@
  * @s : the string
  * @accept : consist only of bytes
  *
- * Return : Returns the number of bytes in the initial segment of s which
+ * Return: Returns the number of bytes in the initial segment of s which
  * consist only of bytes from accept
  */
 
