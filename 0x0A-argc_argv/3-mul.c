@@ -7,7 +7,7 @@
  * @argc:count of  value in array
  * @argv: array
  *
- * Return: return 1
+ * Return: return 0
  */
 int main(int argc, char *argv[])
 {
@@ -15,10 +15,14 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		s = atio(argv[1]) * atio(argv[2]);
+		s = atoi (argv[1]) * atio (argv[2]);
 		printf("%d\n", s);
 	}
 	else
+	{
 		printf("Error\n");
-	return (1);
+		return (1);
+	}
+	return (0);
+
 }
