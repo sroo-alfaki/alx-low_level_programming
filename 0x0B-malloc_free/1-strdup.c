@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * *_strdup - pointer to a newly allocated space in memory,
@@ -28,5 +30,4 @@ char *_strdup(char *str)
 			n[i] = str[i];
 	}
 	return (n);
-	free(n);
 }
