@@ -2,11 +2,10 @@
 
 /**
  * free_grid - function that frees a 2 dimensional grid
- * @grid:value
+ * @grid: grid
  * @height: value
- * Return: null
+ * Return: void
  */
-
 
 void free_grid(int **grid, int height)
 {
