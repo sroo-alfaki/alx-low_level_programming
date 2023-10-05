@@ -28,4 +28,5 @@ char *_strdup(char *str)
 			n[i] = str[i];
 	}
 	return (n);
+	free(n);
 }
