@@ -15,11 +15,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list op;
 
-	if (!n)
-	{
-		printf("\n");
-		return (0);
-	}
+	//if (!n)
+	//{
+	//	printf("\n");
+	//	return (0);
+	//}
 	va_start(op, n);
 
 	for (i = 0; i < n; i++)
