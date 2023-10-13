@@ -21,8 +21,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		return;
 	}
 	va_start(op, n);
-		while (i--)
-			printf("%d%s", va_arg(op, int),
-					i ? (separator ? separator : ","):"\n");
-		va_end(op);
+	for (i = 0; i < n; i++)
+		if (i > 0 && separator != NULL)
+		{
+			printf("%s", separator);
+			printf("%d", va_arg(op, int);
+					}
+va_end(op);
 }
