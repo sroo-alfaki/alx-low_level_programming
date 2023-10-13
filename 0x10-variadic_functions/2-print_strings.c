@@ -13,8 +13,8 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list op;
-	unsigned int i;
 	char *s;
+	unsigned int i;
 
 	va_start(op, n);
 
