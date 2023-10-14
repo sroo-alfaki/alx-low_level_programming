@@ -13,6 +13,8 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *s, *sp = "";
 
+	va_start(op, format);
+
 	if (format)
 	{
 		while (format[i])
