@@ -9,7 +9,6 @@
  *
  * Return: always 0
  */
-
 int main(int __attribute__((unused__)) argc, char *argv[])
 {
 	int n1, n2;
@@ -22,7 +21,7 @@ int main(int __attribute__((unused__)) argc, char *argv[])
 	}
 
 	n1 = atoi(argv[1]);
-	op = arg[2];
+	op = argv[2];
 	n2 = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
