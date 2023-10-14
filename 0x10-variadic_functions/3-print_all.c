@@ -17,16 +17,16 @@ void print_all(const char * const format, ...)
 	{
 		while (format[i])
 		{
-			switch (fomat[i])
+			switch (format[i])
 			{
 				case'c':
-					printf("%s%c", sp, va_arg(op, int))
+					printf("%s%c", sp, va_arg(op, int));
 					break;
 				case'i':
-					printf("%s%d", sp, va_arg(op, int))
+					printf("%s%d", sp, va_arg(op, int));
 					break;
 				case'f':
-					printf("%s%f", sp, va_arg(op, double))
+					printf("%s%f", sp, va_arg(op, double));
 					break;
 				case 's':
 					s = va_arg(op, char*);
@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 					break;
 				default:
 					  i++;
-					 countinue;
+					 continue;
 			}
 		sp = ",";
 		i++;
