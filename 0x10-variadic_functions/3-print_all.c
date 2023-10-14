@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case'c':
-					printf("%s%c", sp, va_arg(op, char));
+					printf("%s%c", sp, va_arg(op, int));
 					break;
 				case'i':
 					printf("%s%d", sp, va_arg(op, int));
