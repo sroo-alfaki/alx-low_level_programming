@@ -1,49 +1,48 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
 /**
  * print_all -  function that prints anything.
  * @format: list of type
- *
  * Return: void
  */
 void print_all(const char * const format, ...)
 {
-	va_list op;
-	int i = 0;
-	char *s, *sp = "";
+	va_list args;
 
-	va_start(op, format);
-
-	if (format)
+	va_start(args, format);
+	while (format && *format)
 	{
-		while (format[i])
+		if (*format == 'c')
 		{
-			switch (format[i])
-			{
-				case'c':
-					printf("%s%c", sp, va_arg(op, int));
-					break;
-				case'i':
-					printf("%s%d", sp, va_arg(op, int));
-					break;
-				case'f':
-					printf("%s%f", sp, va_arg(op, double));
-					break;
-				case 's':
-					s = va_arg(op, char*);
-					if (!s)
-					s = "(nil)";
-					printf("%s%s", sp, s);
-					break;
-				default:
-					  i++;
-				continue;
-			}
-		sp = ",";
-		i++;
+			int c_val = va_arg(args, int);
+
+			printf("%c", c_val);
 		}
+		else if (*format == 'i')
+		{
+			int i_val = va_arg(args, int);
+
+			printf("%d", i_val);
+		}
+		else if (*format == 'f')
+		{
+			double f_val = va_arg(args, double);
+
+			printf("%f", f_val);
+		}
+		else if (*format == 's')
+		{
+			char *s_val = va_arg(args, char *);
+
+			printf("%s", s_val ? s_val : "(nil)");
+		}
+
+		if (*(format + 1))
+			printf(", ");
+
+		format++;
 	}
+
 	printf("\n");
-	va_end(op);
+	va_end(args);
 }
