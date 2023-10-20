@@ -15,12 +15,12 @@ int _strlen(char *n)
 	return (i);
 }
 /**
- * print_listint - function that prints all the elements of a list_t list.
+ * print_list - function that prints all the elements of a list_t list.
  * @h: linked list of type listint_t to print
  * Return: number of nodes
  */
 
-size_t print_list(const listint_t *h)
+size_t print_list(const list_t *h)
 
 {
 	if (h == NULL)
@@ -30,7 +30,7 @@ size_t print_list(const listint_t *h)
 		while (h != NULL)
 		{
 			printf("[%d]%s\n",  _strlen(h->str), h->str);
-			*h = h->next;
+			h = h->next;
 		}
 
 	}
