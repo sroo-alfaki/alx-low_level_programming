@@ -15,7 +15,7 @@ int _strlen(char *n)
 	return (i);
 }
 /**
- *print_listint - function that prints all the elements of a list_t list.
+ * print_listint - function that prints all the elements of a list_t list.
  * @h: linked list of type listint_t to print
  * Return: number of nodes
  */
