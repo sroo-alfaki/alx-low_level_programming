@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  *_strlen - function length of string
  * @n: string
