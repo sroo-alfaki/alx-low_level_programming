@@ -23,9 +23,10 @@ int _strlen(char *n)
 size_t print_list(const list_t *h)
 {
 	size_t d = 0;
+
 	while (h != NULL)
 	{
-		printf("[%d]%s\n",  _strlen(h->str), h->str);
+		printf("[%d] %s\n",  _strlen(h->str), h->str);
 		h = h->next;
 		d++;
 	}
