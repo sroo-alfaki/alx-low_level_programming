@@ -20,7 +20,7 @@ int _strlen(char *n)
  * Return: number of nodes
  */
 
-size_t print_listint(const listint_t *h)
+size_t print_list(const listint_t *h)
 
 {
 	if (h == NULL)
@@ -29,8 +29,8 @@ size_t print_listint(const listint_t *h)
 	{
 		while (h != NULL)
 		{
-			printf("[%d] %s\n",  _strlen(h->str), h->str);
-			h = h->next;
+			printf("[%d]%s\n",  _strlen(h->str), h->str);
+			*h = h->next;
 		}
 
 	}
