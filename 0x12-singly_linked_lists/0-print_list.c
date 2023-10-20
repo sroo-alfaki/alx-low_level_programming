@@ -12,7 +12,7 @@ int _strlen(char *n)
 		return (0);
 	while (*n++)
 		i++;
-	return(i);
+	return (i);
 }
 
 /**
@@ -28,7 +28,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		printf("%d\n", _strlen(h->str), h->str ? h-> : "(nil)");
+		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
 		d++;
 	}
