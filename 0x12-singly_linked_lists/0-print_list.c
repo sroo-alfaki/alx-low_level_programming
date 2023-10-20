@@ -21,17 +21,13 @@ int _strlen(char *n)
  */
 
 size_t print_list(const list_t *h)
-
 {
-	if (h == NULL)
-		printf("(nil)");
-	else
+	size_t d = 0;
+	while (h != NULL)
 	{
-		while (h != NULL)
-		{
-			printf("[%d]%s\n",  _strlen(h->str), h->str);
-			h = h->next;
-		}
-
+		printf("[%d]%s\n",  _strlen(h->str), h->str);
+		h = h->next;
+		d++;
 	}
+	return (d);
 }
