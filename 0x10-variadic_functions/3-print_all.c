@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *str, *sep = "";
+	char* str, *sep = "";
 
 	va_list list;
 
@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 						break;
 					case 's':
 						str = va_arg(list, char *);
-						printf("%s", s_val ? s_val : "(nil)");
+						printf("%s", str ? str : "(nil)");
 						break;
 					default:
 						i++;
@@ -42,5 +42,4 @@ void print_all(const char * const format, ...)
 		}
 		printf("\n");
 		va_end(list);
-	}
 }
