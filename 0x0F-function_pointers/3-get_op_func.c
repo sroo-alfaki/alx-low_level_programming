@@ -9,21 +9,17 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-	p_t ops[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL}
+		{NULL, NULL},
 	};
 	int i = 0;
 
-	while (i < 5)
-	{
-		if (ops[i].op[0] = *s && strlen(s) == 1)
-			return (ops[i].f);
+	while (ops[i].op != NULL  && *(ops[i].op) != *s)
 		i++;
-	}
-	return (NULL);
+	return (ops[i].f);
 }
