@@ -21,7 +21,7 @@ int _strlen(char *n)
  *Return: number of nodes
  */
 
-size_t print_list(const list_t *h)
+size_t print_list(const listint_t *h)
 {
 	size_t d = 0;
 
